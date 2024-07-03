@@ -6,6 +6,8 @@ function App() {
     <>
       <div>
         
+      <h1 className="">aliyu bar</h1>
+
       </div>
        
     </>
