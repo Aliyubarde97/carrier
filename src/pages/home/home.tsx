@@ -3,11 +3,12 @@ import InternshipSection from './InternshipSection'
 import Mentorship from './Mentorship'
 import ScholarshipSection from './ScholarshipSection'
 import WorkSection from './WorkSection'
+import Hero from "../../assets/hero.png"
 
 const home = () => {
   return (
     <>
-       <section className="bg-gray-900 text-white-900 p-10">
+       <section className="bg-gray-900 text-white-900 p-5">
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row items-center">
 
@@ -28,7 +29,7 @@ const home = () => {
           {/* Right Side: Image */}
           <div className="w-full md:w-1/2 lg:w-3/5 mt-12 md:mt-0 flex justify-center">
             <img 
-              // src={image} // Replace with your actual image URL
+              src={Hero} className='bg-none' // Replace with your actual image URL
               alt="Hero Illustration" 
               // className="rounded-lg shadow-xl"
             />
@@ -37,6 +38,7 @@ const home = () => {
         </div>
       </div>
     </section>
+    
     <WorkSection/>
     <ScholarshipSection/>
     <InternshipSection/>

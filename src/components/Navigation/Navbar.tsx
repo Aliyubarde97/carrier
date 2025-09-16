@@ -1,6 +1,7 @@
 import { List, X } from "phosphor-react";
 import { Link } from 'react-router-dom';
 import {useState} from "react";
+import Logo from "../../assets/logo.png"
 const Navbar = () => {
 
      const [isOpen, setIsOpen] = useState(false);
@@ -12,10 +13,10 @@ const Navbar = () => {
   return (
     <>
     
-     <nav className="bg-gray-900 p-10 text-white">
+     <nav className="bg-gray-900 p-5 text-white">
       <div className="container mx-auto flex justify-between items-center px-6">
         <div className="text-white font-bold text-xl">
-          <a href="/">Logo</a>
+          <Link to="/home"><img src={Logo} alt="logo"  className="[w-50px] h-20"   /></Link>
         </div>
         <div className="hidden md:flex space-x-4">
           <Link to="/home" className="text-gray-300 text-[20px] font-semibold hover:border-b-2 border-white">Home</Link>
